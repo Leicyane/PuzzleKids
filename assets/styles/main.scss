@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//responsive font
+html {
+    @media(max-width: 1080px) {
+      font-size: 93.75%;
+      //16*0,9373= 15px
+    }
+    @media(max-width: 768px) {
+      font-size: 87.5%;
+      //16*0,875 = 14px
+    }
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --purple: #6B4CB9;
+  --red: #DC735D;
+  --purple-light: #BDB1DF;
+  --green-dark: #295562;
+  --green: #6CE9A6;
+  --blue: #397EE5;
+  --blue-light: #BED5F7;
+  --colorFont: #2C2C2C;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--bgMain);
+    color:var(--labelText);
+
+
+}
