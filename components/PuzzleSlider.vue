@@ -13,7 +13,7 @@
       </div>
       <div style="display: flex; gap: 10px;">
         <button @click="checkPuzzle" class="btn-finalizar">Finalizar</button>
-        <button @click="checkPuzzle" class="btn-finalizar">Finalizar</button>
+        <!-- <button @click="checkPuzzle" class="btn-finalizar">Finalizar</button> -->
       </div>
     </div>
   </template>
