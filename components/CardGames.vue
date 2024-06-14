@@ -1,9 +1,9 @@
 <template>
     <div class="card" v-if="data && data.imgcaminho">
-      <div class="containerImgGame">
+      <div @click="redirectPage(data.pageRouter)" class="containerImgGame">
         <img :src="data.imgcaminho" alt="Imagem do Jogo" />
       </div>
-      <span>{{ data.id }}</span>
+      <span>{{ data.name }}</span>
     </div>
 </template>
 <script lang="ts">
@@ -20,9 +20,9 @@ export default Vue.extend({
   },
 
   methods:{
-      // redirectPage(){
-      //     this.$router.push('/login')
-      // }
+      redirectPage(router: any){
+          this.$router.push(router)
+      }
   }
 })
 </script>
@@ -34,6 +34,10 @@ export default Vue.extend({
     border-radius: 1rem;
     padding: 1rem;
     text-align: center;
+    cursor: pointer;
+    span{
+        margin-top:1rem;
+    }
 
     .containerImgGame{
         background-color: wheat;

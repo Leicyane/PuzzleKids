@@ -21,5 +21,9 @@ export default Vue.extend({
     color: white;
     border: none;
     border-radius: 4px;
-  }
+    cursor: pointer;
+}
+button:hover {
+  background-color: #dea9f5;
+}
 </style>

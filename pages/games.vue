@@ -15,23 +15,15 @@
               { 
                 id: 1,
                 name: 'Puzzle deslizante numeros',
-                imgcaminho: '~/assets/puzzle.png'
+                imgcaminho: '*/assets/puzzle.png',
+                pageRouter: "/puzzle"
               },
               { 
                 id: 2,
-                name: 'Puzzle deslizante abc',
-                imgcaminho: '~/assets/puzzle.png'
-              },
-              { 
-                id: 3,
                 name: 'Jogo da memoria',
-                imgcaminho: '../assets/puzzle.png'
-              },
-              { 
-                id: 4,
-                name: 'Cores Primarias',
-                imgcaminho: '../assets/puzzle.png'
-              },
+                imgcaminho: '*/assets/puzzle.png',
+                pageRouter: "/memoryCard"
+              }
 
             ]
         }

@@ -12,8 +12,8 @@
         </div>
       </div>
       <div style="display: flex; gap: 10px;">
+        <nuxt-link to="/games" class="btn-finalizar">Voltar</nuxt-link>
         <button @click="checkPuzzle" class="btn-finalizar">Finalizar</button>
-        <!-- <button @click="checkPuzzle" class="btn-finalizar">Finalizar</button> -->
       </div>
     </div>
   </template>
@@ -32,6 +32,7 @@
         // Ensure the empty space is always at the end
         numbers.value.push(9);
       };
+      
   
       const shuffleArray = (array) => {
         let currentIndex = array.length, randomIndex;
@@ -66,7 +67,7 @@
           (Math.abs(clickedCol - emptyCol) === 1 && clickedRow === emptyRow)
         );
       };
-  
+
       const checkPuzzle = () => {
         if (JSON.stringify(numbers.value.slice(0, 8)) === JSON.stringify(winningOrder)) {
             console.log(JSON.stringify(numbers.value.slice(0, 8)))
@@ -115,6 +116,9 @@
     color: white;
     border: none;
     border-radius: 4px;
+    text-decoration: none; 
+    display: grid;
+    place-items: center;
   }
   
   .tile {
